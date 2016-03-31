@@ -3,14 +3,17 @@ A Laravel dashboard demo.
 ![Laravel demo](public/images/Laravel_demo.png)
 
 ### Usage
-1. clone this project
-2. install composer( if composer has not been install )
-3. run:
++   clone this project
++   install composer( if composer has not been install )
++   run:
 ```bash
 composer install
 ```
-4. config database, file path: <code>config/database.php</code>
-5. config Laravel enviroment( if .env file is not exisit ), run:
++   config database, file path: <code>config/database.php</code>, then run:
+```bash
+php artisan migrate
+```
++   config Laravel enviroment( if .env file is not exisit ), run:
 ```bash
 cp .env.example .env
 php artisan key:generate
